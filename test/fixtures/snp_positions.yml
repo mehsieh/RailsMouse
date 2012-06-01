@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  snp_id: MyString
+  position: 1
+  strain_id: 1
+  chromosome: 1
+  allele: MyText
+
+two:
+  snp_id: MyString
+  position: 1
+  strain_id: 1
+  chromosome: 1
+  allele: MyText

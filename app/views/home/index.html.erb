@@ -1,0 +1,28 @@
+<br><h1>Welcome to the Mouse Genome Variation Identifier!</h1><br/><br/>
+
+<% unless @strains.empty? %>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>SNP_ID</th>
+        <th>Chromosome</th>
+        <th>Base Position</th>
+        <% @strain_list.each do |strain| %>
+          <th><%= strain.name %></th>
+        <% end %>
+      </tr>
+    </thead>
+    <tbody>
+      <% @snp_positions.each do |snp_position| %>
+        <tr>
+          <td><%= snp_position.snp_id %></td>
+  				<td><%= snp_position.chromosome  %></td>
+  				<td><%= snp_position.position %></td>
+  				<% snp_position.strains.each do |strain|%>
+          <td><%= strain.allele %></td>
+          <% end %>
+        </tr>
+      <% end %>  
+    </tbody>
+  </table>
+<% end %>

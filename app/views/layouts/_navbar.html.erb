@@ -1,0 +1,19 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+			<%# link_to "Home", home_path, :class => "brand" %>
+      <!-- <a class="brand" href="#">Creamery</a> -->
+      <div class="nav-collapse">
+        <ul class="nav">
+          <li> <%= link_to('MGVI', home_path) %></li>
+          <li><%= link_to "Strains", strains_path %></li>
+          <li><%= link_to "SNP Positions", snp_positions_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
